@@ -1,0 +1,139 @@
+/* 设置body的样式 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('library-background.jpg');
+    background-size: cover;
+    background-color: #f0e68c; /* 增加了一个背景颜色，用于背景图片加载时显示 */
+}
+
+/* 设置游戏板样式 */
+#game-board {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #8b4513; /* 改变边框颜色为深棕色 */
+    background-color: #fff8dc; /* 设置一个浅米色背景 */
+}
+
+/* 设置角色样式 */
+#character {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url('images/character.jpg');
+    background-size: cover;
+    border-radius: 50%; /* 增加圆形效果 */
+}
+
+/* 设置线索样式 */
+#clue { 
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url('images/clue.png');
+    background-size: cover;
+    border: 1px solid #d2691e; /* 增加边框 */
+}
+
+/* 设置隐藏样式 */
+.hidden {
+    display: none;
+}
+
+/* 设置弹出框样式 */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5deb3; /* 改变背景颜色为小麦色 */
+    padding: 20px;
+    border: 2px solid #8b4513; /* 改变边框颜色为深棕色 */
+    text-align: center;
+}
+
+/* 寺庙地图样式 */
+#temple-map {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #8b4513;
+    background-image: url('temple-background.jpg');
+    background-size: cover;
+}
+
+/* 宝藏和守卫样式 */
+#treasure, #guard {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+/* 宝藏样式 */
+#treasure {
+    background-image: url('images/treasure.png');
+    background-size: cover;
+    border: 1px solid #cd853f; /* 增加边框 */
+}
+
+/* 守卫样式 */
+#guard {
+    background-image: url('images/guard.png');
+    background-size: cover;
+    border: 1px solid #cd853f; /* 增加边框 */
+}
+
+/* 结果弹出框样式 */
+#result-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5deb3;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    text-align: center;
+}
+
+/* 开始屏幕样式 */
+#start-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5deb3;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    text-align: center;
+}
+
+/* 背景音乐样式 */
+#background-music {
+    display: none;
+}
+
+#data-display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 204, 0.8); /* 改变透明度和颜色 */
+    border-bottom: 2px solid #8b4513;
+    padding: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* 加载指示器样式 */
+#loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #8b4513; /* 改变文字颜色 */
+}
